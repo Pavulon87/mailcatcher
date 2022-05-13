@@ -25,4 +25,4 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64
           push: true
-          tags: ghcr.io/0xerr0r/mailcatcher:latest
+          tags: ghcr.io/pavulon87/mailcatcher:latest
