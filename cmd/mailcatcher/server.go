@@ -50,7 +50,7 @@ func (s *Session) Data(r io.Reader) error {
 			log.Fatal("error", err)
 			return err
 		} else {
-			msg.Header.SetSubject(fmt.Sprintf("[MAILCATCHER] %s", msg.Header.Subject()))
+			msg.Header.SetSubject(fmt.Sprintf("%s", msg.Header.Subject()))
 			msg.Header.SetTo(fmt.Sprintf("\"%s\" <%s>", msg.Header.To()[0], config.MC_REDIRECT_TO))
 			msg.Header.SetFrom(fmt.Sprintf("\"%s\" <%s>", "MAILCATCHER", config.MC_SENDER_MAIL))
 
